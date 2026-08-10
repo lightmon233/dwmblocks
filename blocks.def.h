@@ -4,7 +4,7 @@ static const Block blocks[] = {
 	{"  ", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
   {" ",    "awk '{c=$1} END {getline < \"/sys/class/power_supply/BAT0/status\"; print ($1 ~ /^Charg/) ? \"+\"c\"%\" : c\"%\"}' /sys/class/power_supply/BAT0/capacity",    30,                 0},
 	{" ", "sh -c \"pamixer --get-mute | grep -q true && echo MUTE || echo \\\"$(pamixer --get-volume)%\\\"\"",	0,		10},
-	{" ", "date '+%b %d(%a) %R '",					5,		0},
+	{"󰥔 ", "date '+%b %d(%a) %R '",					5,		0},
 };
 
 //sets delimiter between status commands. NULL character ('\0') means no delimiter.
