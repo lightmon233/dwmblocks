@@ -34,7 +34,7 @@ void setupsignals();
 void sighandler(int signum, siginfo_t *si, void *ucontext);
 int getstatus(char *str, char *last);
 void statusloop();
-void termhandler();
+void termhandler(int signum);
 void chldhandler(int sig);
 void pstdout();
 #ifndef NO_X
