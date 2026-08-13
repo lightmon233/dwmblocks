@@ -213,7 +213,7 @@ void sighandler(int signum, siginfo_t *si, void *ucontext)
 	}
 }
 
-void termhandler()
+void termhandler(int signum)
 {
 	statusContinue = 0;
 }
